@@ -1,7 +1,7 @@
 # Partial Convolutions for Image Inpainting using Keras
 Keras implementation of "*Image Inpainting for Irregular Holes Using Partial Convolutions*", https://arxiv.org/abs/1804.07723. A huge shoutout the authors Guilin Liu, Fitsum A. Reda, Kevin J. Shih, Ting-Chun Wang, Andrew Tao and Bryan Catanzaro from NVIDIA corporation for releasing this awesome paper, it's been a great learning experience for me to implement the architecture, the partial convolutional layer, and the loss functions. 
 
-<img src='./data/images/img_test_results.PNG' />
+<img src='./data/images/eq1.PNG' />
 
 # Dependencies
 * Python 3.6
