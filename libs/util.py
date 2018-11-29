@@ -71,12 +71,12 @@ def random_mask_line_for_ct(height, width, channels=3):
     # Draw random lines
     for _ in range(randint(1, 2)):
         x1 = randint(100, width-100)
-#         x2 = x1 + randint(90, 120)
-        x2 = x1 + randint(65, 70)
+        x2 = randint(100, width-100)
+        #x2 = x1 + randint(65, 70)
         y1 = randint(150, height-90)
-#         y2 = y1 + randint(90, 120)
-        y2 = y1 + randint(65, 70)
-        thickness = randint(10, 10)
+        y2 = randint(150, height-90)
+        #y2 = y1 + randint(65, 70)
+        thickness = randint(10, 25)
         cv2.line(img,(x1,y1),(x2,y2),(1,1,1), thickness)
          
     return 1-img
