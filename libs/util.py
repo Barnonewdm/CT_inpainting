@@ -78,6 +78,11 @@ def random_mask_line_for_ct(height, width, channels=3):
         #y2 = y1 + randint(65, 70)
         thickness = randint(10, 25)
         cv2.line(img,(x1,y1),(x2,y2),(1,1,1), thickness)
+    # Draw random circles 
+    for _ in range(randint(1, 3)):
+        x1, y1 = randint(70, width-70), randint(150, height-70)
+        radius = randint(3, size)
+        cv2.circle(img,(x1,y1),radius,(1,1,1), -1)
          
     return 1-img
 
