@@ -20,7 +20,7 @@ def stack_slices(data_dir, tem):
         png = Image.open(data_dir + 'predicted_' + str(i) + '.png')
         png = np.asarray(png)
         save_data = tem_data
-        save_data[i,:,:] = cv2.resize(png[:,:,0],(tem_data.shape[1],tem_data.shape[2]))
+        save_data[i,:,:] = cv2.resize(png[::-1,:,0],(tem_data.shape[1],tem_data.shape[2]))
         save_img = sitk.GetImageFromArray(save_data)
         save_img.CopyInformation(tem)
     return save_img
