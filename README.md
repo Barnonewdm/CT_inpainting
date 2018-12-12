@@ -16,6 +16,11 @@ Step 2: Implementing and testing the implementation of the `PConv2D` layer<br />
 Step 3: Implementing and testing the UNet architecture with `PConv2D` layers<br />
 Step 4: Training & testing the final architecture on ImageNet
 
+* Inference Stage:
+You may need to edit the model name in predict.py.
+Then, 
+./pipeline_for_test.sh -t path_to_original_image -s path_to_original_mask
+
 # Implementation details
 Details of the implementation are in the [paper itself](https://arxiv.org/abs/1804.07723), however I'll try to summarize some details here.
 
