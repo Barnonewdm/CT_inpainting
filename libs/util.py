@@ -64,7 +64,7 @@ def random_mask_line_for_ct(height, width, channels=3):
     img = np.zeros((height, width, channels), np.uint8)
 
     # Set size scale
-    size = int((width + height) * 0.03)
+    size = int((width + height) * 0.05)
     if width < 64 or height < 64:
         raise Exception("Width and Height of mask must be at least 64!")
     
@@ -76,7 +76,7 @@ def random_mask_line_for_ct(height, width, channels=3):
         y1 = randint(150, height-90)
         y2 = randint(150, height-90)
         #y2 = y1 + randint(65, 70)
-        thickness = randint(10, 25)
+        thickness = randint(10, 45)
         cv2.line(img,(x1,y1),(x2,y2),(1,1,1), thickness)
     # Draw random circles 
     for _ in range(randint(1, 3)):
